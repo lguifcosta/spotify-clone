@@ -4,21 +4,23 @@ import { text } from "stream/consumers";
 import { twMerge } from "tailwind-merge";
 
 interface SidebarItemProps {
-    icon: IconType;
-    label: string;
-    active?: boolean;
-    href: string
+  icon: IconType;
+  label: string;
+  active?: boolean;
+  href: string;
 }
 
-const SidebarItem:React.FC<SidebarItemProps> = ({
-    icon: Icon, 
-    label,
-    active,
-    href
-})=> {
-    return (
-        <Link href={href}
-        className={twMerge(`
+const SidebarItem: React.FC<SidebarItemProps> = ({
+  icon: Icon,
+  label,
+  active,
+  href,
+}) => {
+  return (
+    <Link
+      href={href}
+      className={twMerge(
+        `
         flex
         flew-row
         h-auto
@@ -32,11 +34,14 @@ const SidebarItem:React.FC<SidebarItemProps> = ({
         transmition
         text-neutral-400
         py-1
-        `,active && "text-white")}>
-             <Icon size={26} />
-             <p className="truncate w-full" > {label} </p>
-             </Link>
-    )
-}
+        `,
+        active && "text-white",
+      )}
+    >
+      <Icon size={26} />
+      <p className="truncate w-full"> {label} </p>
+    </Link>
+  );
+};
 
 export default SidebarItem;

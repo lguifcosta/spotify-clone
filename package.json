@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "lint:check": "prettier --check .",
+    "lint:fix": "prettier --write ."
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.0.4",
@@ -36,6 +38,7 @@
   },
   "devDependencies": {
     "@types/uniqid": "^5.3.2",
+    "prettier": "^3.0.2",
     "supabase": "^1.82.1"
   }
 }

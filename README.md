@@ -1,5 +1,5 @@
-The propouse of this project is train my skills in back-end, front-end and databases. On this code i will develop a spotify clone ( with some diferences ) while i'm training 
-nextjs like a new framework 
+The propouse of this project is train my skills in back-end, front-end and databases. On this code i will develop a spotify clone ( with some diferences ) while i'm training
+nextjs like a new framework
 
 ## Getting Started
 
@@ -27,5 +27,3 @@ To learn more about Next.js, take a look at the following resources:
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-
